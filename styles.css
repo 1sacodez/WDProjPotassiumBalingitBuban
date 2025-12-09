@@ -39,27 +39,29 @@
   
   .title {
     font-family: Rockwell, serif;
-    font-size: 28px;
+    font-size: 50px;
   }
 
   main {
-    padding-top: 100px;
+    padding-top: 90px;
     text-align: center;
   }
 
   h1{
     color: #ff66c4;
-    font-size: 50px;
+    font-size: 80px;
     font-family: Trebuchet MS;
     text-shadow: 3px 4px 3px #0a004b;
   }
   
-  .parallelogram{
-    width: 200px;
+  .parallelogram1{
+    width: 220px;
 	  height: 500px;
-	  transform: skew(-20deg);
+	  transform: skew(-32deg);
 	  background: #555;
-    translate(80, 0);
+    position: relative;
+    top: 0px;
+    left: 300px;
   }
 
   footer {
