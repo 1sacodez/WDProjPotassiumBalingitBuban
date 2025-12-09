@@ -1,3 +1,8 @@
+@keyframes slide{
+  0% {transform: translateX(0);}
+  100% {transform: translateX(200px);}
+}
+
 * {
     box-sizing: border-box;
   }
@@ -24,7 +29,7 @@
     color: white;
     text-decoration: none;
     padding: 10px;
-    font-size: 18px;
+    font-size: 25px;
   }
   
   .header a:hover {
