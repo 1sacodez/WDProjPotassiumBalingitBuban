@@ -15,6 +15,7 @@
   
   .header {
     background-color: #0f006d;
+    font-family: "Jersey 10", sans-serif;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -38,8 +39,8 @@
   }
   
   .title {
-    font-family: Rockwell, serif;
-    font-size: 50px;
+    font-family: "Jersey 10", Rockwell, serif;
+    font-size: 80px;
   }
 
   main {
@@ -49,8 +50,8 @@
 
   h1{
     color: #ff66c4;
-    font-size: 80px;
-    font-family: Trebuchet MS;
+    font-size: 85px;
+    font-family:  "Jersey 10", Trebuchet MS;
     text-shadow: 3px 4px 3px #0a004b;
   }
 
@@ -58,7 +59,7 @@
     width: 220px;
 	  height: 500px;
 	  transform: skew(-32deg);
-	  background: #ff00aa;
+	  border: 4px solid #000000;
     position: relative;
     top: 0px;
     left: 300px;
@@ -69,7 +70,7 @@
     width: 220px;
 	  height: 500px;
 	  transform: skew(-32deg);
-	  background: #ffe600;
+	  border: 4px solid #000000;
     position: relative;
     bottom: 500px;
     left: 550px;
@@ -80,7 +81,7 @@
     width: 220px;
 	  height: 500px;
 	  transform: skew(-32deg);
-	  background: #00ff4c;
+	  border: 4px solid #000000;
     position: relative;
     bottom: 1000px;
     left: 800px;
@@ -91,7 +92,7 @@
     width: 220px;
 	  height: 500px;
 	  transform: skew(-32deg);
-	  background: #00f7ff;
+	  border: 4px solid #000000;
     position: relative;
     bottom: 1500px;
     left: 1050px;
@@ -102,7 +103,7 @@
     width: 220px;
 	  height: 500px;
 	  transform: skew(-32deg);
-	  background: #b700ff;
+	  border: 4px solid #000000;
     position: relative;
     bottom: 2000px;
     left: 1300px;
@@ -113,8 +114,130 @@
     transform: skewX(-32deg) scale(1.1);
   }
 
+  .rectangle1{
+    width: 85px;
+    height: 30px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    bottom: 2490px;
+    left: 550px;
+  }
+
+  .rectangle2{
+    width: 85px;
+    height: 30px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    bottom: 2520px;
+    left: 800px;
+  }
+
+  .rectangle3{
+    width: 85px;
+    height: 30px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    bottom: 2550px;
+    left: 1050px;
+  }
+
+  .rectangle4{
+    width: 85px;
+    height: 30px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    bottom: 2580px;
+    left: 1300px;
+  }
+  
+  .rectangle5{
+    width: 85px;
+    height: 30px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    bottom: 2610px;
+    left: 1550px;
+  }
+
+  .rectangle6{
+    width: 150px;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 2380px;
+    left: 180px;
+  }
+
+  .rectangle7{
+    width: 150px;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 2420px;
+    left: 430px;
+  }
+
+  .rectangle8{
+    width: 150px;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 2460px;
+    left: 680px;
+  }
+
+  .rectangle9{
+    width: 150px;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 2500px;
+    left: 930px;
+  }
+
+  .rectangle10{
+    width: 150px;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 2540px;
+    left: 1180px;
+  }
+
   footer {
     background-color: #0f006d;
+    font-family:  "Jersey 10", sans-serif;
+    font-size: 20px;
     color: white;
     text-align: center;
     padding: 15px;
