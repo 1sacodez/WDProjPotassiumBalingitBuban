@@ -15,6 +15,7 @@
   
   .header {
     background-color: #0f006d;
+    font-family: "Jersey 10", sans-serif;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -38,8 +39,8 @@
   }
   
   .title {
-    font-family: Rockwell, serif;
-    font-size: 50px;
+    font-family: "Jersey 10", Rockwell, serif;
+    font-size: 80px;
   }
 
   main {
@@ -49,8 +50,8 @@
 
   h1{
     color: #ff66c4;
-    font-size: 80px;
-    font-family: Trebuchet MS;
+    font-size: 85px;
+    font-family:  "Jersey 10", Trebuchet MS;
     text-shadow: 3px 4px 3px #0a004b;
   }
   
@@ -104,8 +105,130 @@
     left: 1300px;
   }
 
+  .rectangle1{
+    width: 90px;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 2490px;
+    left: 550px;
+  }
+
+  .rectangle2{
+    width: 90px;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 2530px;
+    left: 800px;
+  }
+
+  .rectangle3{
+    width: 90px;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 2570px;
+    left: 1050px;
+  }
+
+  .rectangle4{
+    width: 90px;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 2610px;
+    left: 1300px;
+  }
+  
+  .rectangle5{
+    width: 90px;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 2650px;
+    left: 1550px;
+  }
+
+  .rectangle6{
+    width: 150px;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 2400px;
+    left: 170px;
+  }
+
+  .rectangle7{
+    width: 150px;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 2440px;
+    left: 420px;
+  }
+
+  .rectangle8{
+    width: 150px;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 2475px;
+    left: 670px;
+  }
+
+  .rectangle9{
+    width: 150px;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 2515px;
+    left: 920px;
+  }
+
+  .rectangle10{
+    width: 150px;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 2555px;
+    left: 1170px;
+  }
+
   footer {
     background-color: #0f006d;
+    font-family:  "Jersey 10", sans-serif;
+    font-size: 20px;
     color: white;
     text-align: center;
     padding: 15px;
