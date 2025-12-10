@@ -106,62 +106,62 @@
   }
 
   .rectangle1{
-    width: 90px;
-    height: 40px;
+    width: 85px;
+    height: 30px;
     background: #000000;
     color: #ffffff;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     bottom: 2490px;
     left: 550px;
   }
 
   .rectangle2{
-    width: 90px;
-    height: 40px;
+    width: 85px;
+    height: 30px;
     background: #000000;
     color: #ffffff;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
-    bottom: 2530px;
+    bottom: 2520px;
     left: 800px;
   }
 
   .rectangle3{
-    width: 90px;
-    height: 40px;
+    width: 85px;
+    height: 30px;
     background: #000000;
     color: #ffffff;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
-    bottom: 2570px;
+    bottom: 2550px;
     left: 1050px;
   }
 
   .rectangle4{
-    width: 90px;
-    height: 40px;
+    width: 85px;
+    height: 30px;
     background: #000000;
     color: #ffffff;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
-    bottom: 2610px;
+    bottom: 2580px;
     left: 1300px;
   }
   
   .rectangle5{
-    width: 90px;
-    height: 40px;
+    width: 85px;
+    height: 30px;
     background: #000000;
     color: #ffffff;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
-    bottom: 2650px;
+    bottom: 2610px;
     left: 1550px;
   }
 
@@ -173,8 +173,8 @@
     text-align: center;
     font-size: 30px;
     position: relative;
-    bottom: 2400px;
-    left: 170px;
+    bottom: 2380px;
+    left: 180px;
   }
 
   .rectangle7{
@@ -185,8 +185,8 @@
     text-align: center;
     font-size: 30px;
     position: relative;
-    bottom: 2440px;
-    left: 420px;
+    bottom: 2420px;
+    left: 430px;
   }
 
   .rectangle8{
@@ -197,8 +197,8 @@
     text-align: center;
     font-size: 30px;
     position: relative;
-    bottom: 2475px;
-    left: 670px;
+    bottom: 2460px;
+    left: 680px;
   }
 
   .rectangle9{
@@ -209,8 +209,8 @@
     text-align: center;
     font-size: 30px;
     position: relative;
-    bottom: 2515px;
-    left: 920px;
+    bottom: 2500px;
+    left: 930px;
   }
 
   .rectangle10{
@@ -221,8 +221,8 @@
     text-align: center;
     font-size: 30px;
     position: relative;
-    bottom: 2555px;
-    left: 1170px;
+    bottom: 2540px;
+    left: 1180px;
   }
 
   footer {
