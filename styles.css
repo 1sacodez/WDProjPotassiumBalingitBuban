@@ -59,7 +59,7 @@
     width: 220px;
 	  height: 500px;
 	  transform: skew(-32deg);
-	  background: #ff00aa;
+	  border: 4px solid #000000;
     position: relative;
     top: 0px;
     left: 300px;
@@ -69,7 +69,7 @@
     width: 220px;
 	  height: 500px;
 	  transform: skew(-32deg);
-	  background: #ffe600;
+	  border: 4px solid #000000;
     position: relative;
     bottom: 500px;
     left: 550px;
@@ -79,7 +79,7 @@
     width: 220px;
 	  height: 500px;
 	  transform: skew(-32deg);
-	  background: #00ff4c;
+	  border: 4px solid #000000;
     position: relative;
     bottom: 1000px;
     left: 800px;
@@ -89,7 +89,7 @@
     width: 220px;
 	  height: 500px;
 	  transform: skew(-32deg);
-	  background: #00f7ff;
+	  border: 4px solid #000000;
     position: relative;
     bottom: 1500px;
     left: 1050px;
@@ -99,7 +99,7 @@
     width: 220px;
 	  height: 500px;
 	  transform: skew(-32deg);
-	  background: #b700ff;
+	  border: 4px solid #000000;
     position: relative;
     bottom: 2000px;
     left: 1300px;
