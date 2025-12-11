@@ -69,6 +69,7 @@
   
   .ready:hover{
     transform: skewX(-10deg) scale(1.1);
+    cursor: pointer;
   }
   
   .content{
