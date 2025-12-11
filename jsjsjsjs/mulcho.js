@@ -22,6 +22,7 @@ const timeEl = document.getElementById("time");
 const scoreDisplay = document.getElementById("score-display");
 const scoreEl = document.getElementById("score");
 const restartBtn = document.getElementById("restart-btn");
+const resultBtn = document.getElementById("result-btn");
 
 function startQuiz() {
   score = 0;
@@ -57,7 +58,6 @@ function updateTimer() {
     clearInterval(timer);
     feedbackEl.textContent = "Time's up!";
     feedbackEl.className = "feedback-message incorrect";
-    endQuiz();
   }
 }
 
@@ -71,7 +71,6 @@ function selectAnswer(correct) {
     feedbackEl.textContent = "Wrong!";
     feedbackEl.className = "feedback-message incorrect";
   }
-  endQuiz();
 }
 
 function endQuiz() {

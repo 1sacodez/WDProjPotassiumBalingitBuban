@@ -120,12 +120,13 @@
 
 /* Timer and feedback */
 #timer-display {
-  margin-top: 10px;
+  margin-top: 2px;
   font-weight: bold;
 }
 
 .feedback-message {
-  margin-top: 15px;
+  margin-top: 5px;
+  font-size: 20px;
   font-weight: bold;
 }
 
