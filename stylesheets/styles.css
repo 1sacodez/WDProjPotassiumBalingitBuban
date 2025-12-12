@@ -38,9 +38,21 @@
     border-radius: 5px;
   }
 
+  .Favicon2 {
+    width: 90px;
+    height: 90px;
+  }
+
+  .Favicon2:hover {
+    background-color: #38b6ff;
+    border-radius: 5px;
+  }
+
   .title {
     font-family: "Jersey 10", Rockwell, serif;
-    font-size: 80px;
+    font-size: 100px;
+    position: relative;
+    left: -650px;
   }
 
   main {
