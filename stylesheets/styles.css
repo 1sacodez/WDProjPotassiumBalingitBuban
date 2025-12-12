@@ -55,6 +55,96 @@
     text-shadow: 3px 4px 3px #0a004b;
   }
 
+  .CLASSNo04 p{
+    font-size: 130px;
+    font-family: Trebuchet MS;
+    color: #ff66c4;
+    position: relative;
+    bottom: 2670px;
+    left: -690px;
+  }
+
+  .CLASSNo05 p{
+    font-size: 130px;
+    font-family: Trebuchet MS;
+    color: #ff66c4;
+    position: relative;
+    bottom: 2950px;
+    left: -440px;
+  }
+
+  .CLASSNo001 p{
+    font-size: 130px;
+    font-family: Trebuchet MS;
+    color: #ff66c4;
+    position: relative;
+    bottom: 3230px;
+    left: -190px;
+  }
+
+  .CLASSNo002 p{
+    font-size: 130px;
+    font-family: Trebuchet MS;
+    color: #ff66c4;
+    position: relative;
+    bottom: 3510px;
+    left: 60px;
+  }
+
+  .CLASSNo003 p{
+    font-size: 130px;
+    font-family: Trebuchet MS;
+    color: #ff66c4;
+    position: relative;
+    bottom: 3790px;
+    left: 310px;
+  }
+
+  .BELLA p{
+    font-size: 40px;
+    font-family: Trebuchet MS;
+    color: #ffffff;
+    position: relative;
+    bottom: 4340px;
+    left: -400px;
+  }
+
+  .ISABEL p{
+    font-size: 40px;
+    font-family: Trebuchet MS;
+    color: #ffffff;
+    position: relative;
+    bottom: 4425px;
+    left: -155px;
+  }
+
+  .MINION1 p{
+    font-size: 40px;
+    font-family: Trebuchet MS;
+    color: #ffffff;
+    position: relative;
+    bottom: 4512px;
+    left: 80px;
+  }
+
+  .MINION2 p{
+    font-size: 40px;
+    font-family: Trebuchet MS;
+    color: #ffffff;
+    position: relative;
+    bottom: 4600px;
+    left: 325px;
+  }
+
+  .MINION3 p{
+    font-size: 40px;
+    font-family: Trebuchet MS;
+    color: #ffffff;
+    position: relative;
+    bottom: 4687px;
+    left: 580px;
+  }
+
   .parallelogram1{
     width: 220px;
 	  height: 500px;
