@@ -1,0 +1,60 @@
+@keyframes slide{
+    0% {transform: translateX(0);}
+    100% {transform: translateX(200px);}
+  }
+  
+  * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: #f4d764;
+      font-family: Trebuchet MS, sans-serif;
+      margin: 0;
+    }
+    
+    .header {
+      background-color: #0f006d;
+      font-family: "Jersey 10", sans-serif;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    
+    .header a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 25px;
+    }
+    
+    .header a:hover {
+      background-color: #38b6ff;
+      border-radius: 5px;
+    }
+  
+    .title {
+      font-family: "Jersey 10", Rockwell, serif;
+      font-size: 80px;
+    }
+
+
+
+
+
+    footer {
+        background-color: #0f006d;
+        font-family:  "Jersey 10", sans-serif;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
