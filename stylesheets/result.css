@@ -38,6 +38,11 @@
       border-radius: 5px;
     }
   
+    .Favicon2 {
+    width: 90px;
+    height: 90px;
+    }
+
     .title {
       font-family: "Jersey 10", Rockwell, serif;
       font-size: 80px;
