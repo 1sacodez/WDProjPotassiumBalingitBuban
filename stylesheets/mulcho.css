@@ -16,7 +16,7 @@
   .header {
     background-color: #0f006d;
     font-family: "Jersey 10", sans-serif;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,10 +42,12 @@
     width: 90px;
     height: 90px;
   }
-  
+
   .title {
     font-family: "Jersey 10", Rockwell, serif;
     font-size: 80px;
+    position: relative;
+    left: -650px;
   }
 
 
