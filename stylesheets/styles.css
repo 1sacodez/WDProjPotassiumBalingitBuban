@@ -1,344 +1,155 @@
-@keyframes slide{
-  0% {transform: translateX(0);}
-  100% {transform: translateX(200px);}
+:root{
+  --bg: #f4d764;
+  --brand: #0f006d;
+  --accent: #38b6ff;
+  --pink: #ff66c4;
+  --card-border: #000;
+  --text: #111;
+  --shadow: 0 10px 25px rgba(0,0,0,.12);
 }
 
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #f4d764;
-    font-family: Trebuchet MS, sans-serif;
-    margin: 0;
-  }
-  
-  .header {
-    background-color: #0f006d;
-    font-family: "Jersey 10", sans-serif;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  
-  .header a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 25px;
-  }
-  
-  .header a:hover {
-    background-color: #38b6ff;
-    border-radius: 5px;
-  }
+*{ box-sizing: border-box; }
 
-  .Favicon2 {
-    width: 90px;
-    height: 90px;
-  }
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Trebuchet MS, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+}
 
-  .title {
-    font-family: "Jersey 10", Rockwell, serif;
-    font-size: 100px;
-    position: relative;
-    left: -650px;
-  }
+.header{
+  background: var(--brand);
+  font-family: "Jersey 10", system-ui, sans-serif;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-  main {
-    padding-top: 90px;
-    text-align: center;
-  }
+.Favicon2{
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  object-fit: cover;
+}
 
-  h1 {
-    color: #ff66c4;
-    font-size: 85px;
-    font-family:  "Jersey 10", Trebuchet MS;
-    text-shadow: 3px 4px 3px #0a004b;
-  }
+.title{
+  color: #fff;
+  text-decoration: none;
+  font-size: clamp(40px, 6vw, 84px);
+  line-height: 1;
+  flex: 1;
+  text-align: center;
+  letter-spacing: .5px;
+}
 
-  .CLASSNo04 p{
-    font-size: 130px;
-    font-family: Trebuchet MS;
-    color: #ff66c4;
-    position: relative;
-    bottom: 2670px;
-    left: -690px;
-  }
+.navz{ display: flex; gap: 8px; }
 
-  .CLASSNo05 p{
-    font-size: 130px;
-    font-family: Trebuchet MS;
-    color: #ff66c4;
-    position: relative;
-    bottom: 2950px;
-    left: -440px;
-  }
+.nav-link{
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 22px;
+}
 
-  .CLASSNo001 p{
-    font-size: 130px;
-    font-family: Trebuchet MS;
-    color: #ff66c4;
-    position: relative;
-    bottom: 3230px;
-    left: -190px;
-  }
+.nav-link:hover{ background: var(--accent); }
+.nav-link.active{ outline: 2px solid rgba(255,255,255,.45); }
 
-  .CLASSNo002 p{
-    font-size: 130px;
-    font-family: Trebuchet MS;
-    color: #ff66c4;
-    position: relative;
-    bottom: 3510px;
-    left: 60px;
-  }
+.page{
+  padding: 22px 16px 90px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
 
-  .CLASSNo003 p{
-    font-size: 130px;
-    font-family: Trebuchet MS;
-    color: #ff66c4;
-    position: relative;
-    bottom: 3790px;
-    left: 310px;
-  }
+h1{
+  margin: 18px 0 18px;
+  color: var(--pink);
+  font-size: clamp(40px, 6vw, 88px);
+  font-family: "Jersey 10", Trebuchet MS, sans-serif;
+  text-shadow: 3px 4px 3px #0a004b;
+}
 
-  .BELLA p{
-    font-size: 40px;
-    font-family: Trebuchet MS;
-    color: #ffffff;
-    position: relative;
-    bottom: 4340px;
-    left: -400px;
-  }
+.minion-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  align-items: stretch;
+  margin: 14px auto 30px;
+}
 
-  .ISA p{
-    font-size: 40px;
-    font-family: Trebuchet MS;
-    color: #ffffff;
-    position: relative;
-    bottom: 4425px;
-    left: -125px;
-  }
+.minion-card{
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 18px;
+  padding: 10px;
+  background: rgba(255,255,255,.35);
+  box-shadow: var(--shadow);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
 
-  .MINION1 p{
-    font-size: 40px;
-    font-family: Trebuchet MS;
-    color: #ffffff;
-    position: relative;
-    bottom: 4512px;
-    left: 80px;
-  }
+.minion-card:hover{
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 16px 34px rgba(0,0,0,.18);
+}
 
-  .MINION2 p{
-    font-size: 40px;
-    font-family: Trebuchet MS;
-    color: #ffffff;
-    position: relative;
-    bottom: 4600px;
-    left: 325px;
-  }
+.minion-img{
+  width: 100%;
+  aspect-ratio: 3 / 6;
+  border: 4px solid var(--card-border);
+  border-radius: 14px;
+  background-image: var(--img);
+  background-size: cover;
+  background-position: center;
 
-  .MINION3 p{
-    font-size: 40px;
-    font-family: Trebuchet MS;
-    color: #ffffff;
-    position: relative;
-    bottom: 4687px;
-    left: 580px;
-  }
+  clip-path: polygon(18% 0%, 100% 0%, 82% 100%, 0% 100%);
+}
 
-  .parallelogram1{
-    width: 220px;
-	  height: 500px;
-	  transform: skew(-32deg);
-	  border: 4px solid #000000;
-    position: relative;
-    top: 0px;
-    left: 300px;
-    transition: transform .2s;
-  }
+.tag{
+  position: absolute;
+  background: #000;
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  letter-spacing: .4px;
+}
 
-  .parallelogram2{
-    width: 220px;
-	  height: 500px;
-	  transform: skew(-32deg);
-	  border: 4px solid #000000;
-    position: relative;
-    bottom: 500px;
-    left: 550px;
-    transition: transform .2s;
-  }
+.tag-name{ top: 14px; left: 14px; }
+.tag-class{ bottom: 14px; right: 14px; }
 
-  .parallelogram3{
-    width: 220px;
-	  height: 500px;
-	  transform: skew(-32deg);
-	  border: 4px solid #000000;
-    position: relative;
-    bottom: 1000px;
-    left: 800px;
-    transition: transform .2s;
-  }
+.info{
+  max-width: 900px;
+  margin: 18px auto;
+  padding: 14px 16px;
+  background: rgba(255,255,255,.45);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  text-align: left;
+}
 
-  .parallelogram4{
-    width: 220px;
-	  height: 500px;
-	  transform: skew(-32deg);
-	  border: 4px solid #000000;
-    position: relative;
-    bottom: 1500px;
-    left: 1050px;
-    transition: transform .2s;
-  }
+.info h2{
+  margin: 0 0 8px;
+  font-family: "Jersey 10", system-ui, sans-serif;
+  font-size: 38px;
+}
 
-  .parallelogram5{
-    width: 220px;
-	  height: 500px;
-	  transform: skew(-32deg);
-	  border: 4px solid #000000;
-    position: relative;
-    bottom: 2000px;
-    left: 1300px;
-    transition: transform .2s;
-  }
+.footer{
+  background: var(--brand);
+  font-family: "Jersey 10", system-ui, sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+}
 
-  .parallelogram1:hover, .parallelogram2:hover, .parallelogram3:hover, .parallelogram4:hover, .parallelogram5:hover{
-    transform: skewX(-32deg) scale(1.1);
-  }
-
-  .rectangle1{
-    width: 85px;
-    height: 30px;
-    background: #000000;
-    color: #ffffff;
-    text-align: center;
-    font-size: 25px;
-    position: relative;
-    bottom: 2490px;
-    left: 550px;
-  }
-
-  .rectangle2{
-    width: 85px;
-    height: 30px;
-    background: #000000;
-    color: #ffffff;
-    text-align: center;
-    font-size: 25px;
-    position: relative;
-    bottom: 2520px;
-    left: 800px;
-  }
-
-  .rectangle3{
-    width: 85px;
-    height: 30px;
-    background: #000000;
-    color: #ffffff;
-    text-align: center;
-    font-size: 25px;
-    position: relative;
-    bottom: 2550px;
-    left: 1050px;
-  }
-
-  .rectangle4{
-    width: 85px;
-    height: 30px;
-    background: #000000;
-    color: #ffffff;
-    text-align: center;
-    font-size: 25px;
-    position: relative;
-    bottom: 2580px;
-    left: 1300px;
-  }
-  
-  .rectangle5{
-    width: 85px;
-    height: 30px;
-    background: #000000;
-    color: #ffffff;
-    text-align: center;
-    font-size: 25px;
-    position: relative;
-    bottom: 2610px;
-    left: 1550px;
-  }
-  
-  .rectangle6{
-    width: 150px;
-    height: 40px;
-    background: #000000;
-    color: #ffffff;
-    text-align: center;
-    font-size: 30px;
-    position: relative;
-    bottom: 2380px;
-    left: 180px;
-  }
-
-  .rectangle7{
-    width: 150px;
-    height: 40px;
-    background: #000000;
-    color: #ffffff;
-    text-align: center;
-    font-size: 30px;
-    position: relative;
-    bottom: 2420px;
-    left: 430px;
-  }
-
-  .rectangle8{
-    width: 150px;
-    height: 40px;
-    background: #000000;
-    color: #ffffff;
-    text-align: center;
-    font-size: 30px;
-    position: relative;
-    bottom: 2460px;
-    left: 680px;
-  }
-
-  .rectangle9{
-    width: 150px;
-    height: 40px;
-    background: #000000;
-    color: #ffffff;
-    text-align: center;
-    font-size: 30px;
-    position: relative;
-    bottom: 2500px;
-    left: 930px;
-  }
-
-  .rectangle10{
-    width: 150px;
-    height: 40px;
-    background: #000000;
-    color: #ffffff;
-    text-align: center;
-    font-size: 30px;
-    position: relative;
-    bottom: 2540px;
-    left: 1180px;
-  }
-
-  footer {
-    background-color: #0f006d;
-    font-family:  "Jersey 10", sans-serif;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+@media (max-width: 520px){
+  .Favicon2{ width: 52px; height: 52px; }
+  .nav-link{ display:none; }
+}

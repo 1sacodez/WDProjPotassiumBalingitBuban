@@ -1,116 +1,83 @@
-@keyframes slide{
-  0% {transform: translateX(0);}
-  100% {transform: translateX(200px);}
+:root{
+  --bg: #f4d764;
+  --brand: #0f006d;
+  --accent: #38b6ff;
+  --pink: #ff66c4;
+  --shadow: 0 10px 25px rgba(0,0,0,.12);
 }
 
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #f4d764;
-    font-family: Trebuchet MS, sans-serif;
-    margin: 0;
-  }
-  
-  .header {
-    background-color: #0f006d;
-    font-family: "Jersey 10", sans-serif;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  
-  .header a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 25px;
-  }
-  
-  .header a:hover {
-    background-color: #38b6ff;
-    border-radius: 5px;
-  }
+*{ box-sizing: border-box; }
+body{ margin:0; background:var(--bg); font-family: Trebuchet MS, system-ui, sans-serif; }
 
-  .Favicon2 {
-    width: 90px;
-    height: 90px;
-  }
+.header{
+  background: var(--brand);
+  font-family: "Jersey 10", system-ui, sans-serif;
+  padding: 10px 14px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+.Favicon2{ width:64px; height:64px; border-radius:10px; object-fit:cover; }
+.title{ color:#fff; text-decoration:none; font-size: clamp(40px, 6vw, 84px); line-height:1; flex:1; text-align:center; }
+.navz{ display:flex; gap:8px; }
+.nav-link{ color:#fff; text-decoration:none; padding:10px 12px; border-radius:10px; font-size:22px; }
+.nav-link:hover{ background: var(--accent); }
+.nav-link.active{ outline: 2px solid rgba(255,255,255,.45); }
 
-  .title {
-    font-family: "Jersey 10", Rockwell, serif;
-    font-size: 80px;
-    position: relative;
-    left: -650px;
-  }
+.page{ max-width: 900px; margin: 0 auto; padding: 26px 16px 90px; text-align:center; }
+.headline{ margin: 14px 0 8px; color: var(--pink); font-size: clamp(44px, 6vw, 92px); font-family: "Jersey 10", system-ui, sans-serif; text-shadow: 3px 4px 3px #0a004b; }
 
-  main {
-    padding-top: 110px;
-    text-align: center;
-  }
-  
-  .ready{
-    width: 15%;
-    height: 80px;
-    transform: skew(-10deg);
-    background-color: #ffa8c8;
-    border: 4px dashed #ffffff;
-    color: #000000;
-    font-size: 20px;
-    display: inline-block;
-    margin: 20px auto;
-    transition: transform .2s;
-    padding-top: 22px;
-  }
-  
-  a{
-    font-size: 50px;
-    text-decoration: none;
-  }
-  
-  .ready:hover{
-    transform: skewX(-10deg) scale(1.1);
-    cursor: pointer;
-  }
-  
-  .content{
-    width: 70%;
-    height: 550px;
-    background-color: #fcf3d1;
-    border-radius: 10px;
-    display: block;
-    margin: 20px auto;
-    padding-top: 180px;
-  }
-  
-  .content>p{
-    font-size: 30px;
-  }
+.panel{
+  margin: 12px auto;
+  background: rgba(255,255,255,.45);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 16px;
+  text-align:left;
+}
+.hint{ margin: 0 0 12px; font-size: 18px; }
+.row{ display:flex; flex-direction: column; gap: 8px; margin: 12px 0; }
+.row-actions{ flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.label{ font-weight: 700; }
+.input{
+  border: 2px solid rgba(0,0,0,.2);
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 18px;
+  outline: none;
+}
+.input:focus{ border-color: rgba(0,0,0,.45); }
 
-  .Banana {
-    width: 300px;
-    height: 300px;
-    position: relative;
-    top: -268px;
-    left: -680px;
-  }
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  border: 2px solid rgba(0,0,0,.25);
+  background: #fff;
+  padding: 12px 16px;
+  border-radius: 16px;
+  cursor:pointer;
+  font-weight: 800;
+  font-size: 16px;
+}
+.btn:hover{ transform: translateY(-1px); }
+.btn-primary{ background: #ffa8c8; }
 
+.small{ margin: 8px 0 0; font-size: 14px; opacity: .85; }
 
+.Banana{
+  width: min(280px, 60vw);
+  height: auto;
+  margin-top: 14px;
+}
 
-  footer {
-    background-color: #0f006d;
-    font-family:  "Jersey 10", sans-serif;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+.footer{ background: var(--brand); font-family: "Jersey 10", system-ui, sans-serif; color:#fff; text-align:center; padding: 12px; }
+
+@media (max-width: 520px){
+  .Favicon2{ width:52px; height:52px; }
+  .nav-link{ display:none; }
+}

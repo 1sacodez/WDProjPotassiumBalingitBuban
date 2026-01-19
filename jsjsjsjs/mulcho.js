@@ -1,11 +1,11 @@
 const questions = [
   {
-    text: "What is Bella's favorite color?",
+    text: "What is Bella's favorite subject from Grade 7 to 9?",
     answers: [
-      { text: "Pink", correct: false },
-      { text: "Purple", correct: false },
-      { text: "Blue", correct: true },
-      { text: "Black", correct: false }
+      { text: "CS", correct: false },
+      { text: "ADTech", correct: true },
+      { text: "ValEd", correct: false },
+      { text: "Physics", correct: false }
     ]
   }
 ];
