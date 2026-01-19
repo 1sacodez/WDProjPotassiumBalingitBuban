@@ -61,3 +61,27 @@ Logo:
 ![KKQuiz! ex._page_for_Two-Choice_Question](https://github.com/1sacodez/WDProjPotassiumBalingitBuban/blob/main/assets/KKQuiz!%20ex._page_for_Two-Choice_Question.webp)
 ![KKQuiz! ex._page_for_Results](https://github.com/1sacodez/WDProjPotassiumBalingitBuban/blob/main/assets/KKQuiz!%20%20ex._page_for_Results.webp)
 ![KKQuiz! References_Page](https://github.com/1sacodez/WDProjPotassiumBalingitBuban/blob/main/assets/KKQuiz!%20References_Page.webp)
+
+
+
+
+
+---
+
+# Q3 Project Proposal Update
+## Final Title: **KKQuiz!**
+- **Features:**
+    - pictures, name, and class number of chosen Potassium students in parallelograms in Home page
+    - music plays when game starts + sound effects when user's answer is either right or wrong
+    - displays no. of correct and incorrect answers + percentage of correct answers when the game is finished
+    - user can create an account and will be given a record book of their scores for every time they play
+    - banana. (banana mascot guy named Gary in the corner during the game)
+    - works on phone and laptop
+- **Details (project specifics):**
+	- we will use HTML forms for the user to create an account (note from Sir: use localStorage)
+	- the data collected will be the answers and final scores of the player. they can recheck their scores after any time they play.
+- **Definition of done:**
+	- ~~past participle of *do*~~
+	- the quiz works and the score that is shown is correct
+
+hi sir :D
