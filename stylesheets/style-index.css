@@ -1,3 +1,14 @@
+:root{
+  --bg: #f4d764;
+  --brand: #0f006d;
+  --accent: #38b6ff;
+  --pink: #ff66c4;
+  --shadow: 0 10px 25px rgba(0,0,0,.12);
+}
+
+*{ box-sizing: border-box; }
+body{ margin:0; background:var(--bg); font-family: Trebuchet MS, system-ui, sans-serif; }
+
 .header{
   background: var(--brand);
   font-family: "Jersey 10", system-ui, sans-serif;
@@ -5,7 +16,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  position: sticky;
+  position: sticky;   /* keeps header in place */
   top: 0;
   z-index: 1000;
 }
@@ -23,7 +34,7 @@
   font-size: clamp(40px, 6vw, 84px);
   line-height: 1;
   flex: 1;
-  text-align: center;
+  text-align: left;
   letter-spacing: .5px;
 }
 
@@ -39,6 +50,8 @@
 
 .nav-link:hover{ background: var(--accent); }
 .nav-link.active{ outline: 2px solid rgba(255,255,255,.45); }
+
+
 
 
 main h1 {

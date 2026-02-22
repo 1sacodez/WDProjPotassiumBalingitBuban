@@ -13,71 +13,40 @@ body{ margin:0; background:var(--bg); font-family: Trebuchet MS, system-ui, sans
   background: var(--brand);
   font-family: "Jersey 10", system-ui, sans-serif;
   padding: 10px 14px;
-  display:flex;
-  align-items:center;
-  gap:12px;
-  position:sticky;
-  top:0;
-  z-index:1000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: sticky;   /* keeps header in place */
+  top: 0;
+  z-index: 1000;
 }
-.Favicon2{ width:64px; height:64px; border-radius:10px; object-fit:cover; }
-.title{ color:#fff; text-decoration:none; font-size: clamp(40px, 6vw, 84px); line-height:1; flex:1; text-align:center; }
-.navz{ display:flex; gap:8px; }
-.nav-link{ color:#fff; text-decoration:none; padding:10px 12px; border-radius:10px; font-size:22px; }
+
+.Favicon2{
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.title{
+  color: #fff;
+  text-decoration: none;
+  font-size: clamp(40px, 6vw, 84px);
+  line-height: 1;
+  flex: 1;
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+.navz{ display: flex; gap: 8px; }
+
+.nav-link{
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 22px;
+}
+
 .nav-link:hover{ background: var(--accent); }
 .nav-link.active{ outline: 2px solid rgba(255,255,255,.45); }
-
-.page{ max-width: 900px; margin: 0 auto; padding: 26px 16px 90px; text-align:center; }
-.headline{ margin: 14px 0 8px; color: var(--pink); font-size: clamp(44px, 6vw, 92px); font-family: "Jersey 10", system-ui, sans-serif; text-shadow: 3px 4px 3px #0a004b; }
-
-.panel{
-  margin: 12px auto;
-  background: rgba(255,255,255,.45);
-  border-radius: 18px;
-  box-shadow: var(--shadow);
-  padding: 16px;
-  text-align:left;
-}
-.hint{ margin: 0 0 12px; font-size: 18px; }
-.row{ display:flex; flex-direction: column; gap: 8px; margin: 12px 0; }
-.row-actions{ flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 10px; }
-.label{ font-weight: 700; }
-.input{
-  border: 2px solid rgba(0,0,0,.2);
-  border-radius: 14px;
-  padding: 12px 14px;
-  font-size: 18px;
-  outline: none;
-}
-.input:focus{ border-color: rgba(0,0,0,.45); }
-
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  text-decoration:none;
-  border: 2px solid rgba(0,0,0,.25);
-  background: #fff;
-  padding: 12px 16px;
-  border-radius: 16px;
-  cursor:pointer;
-  font-weight: 800;
-  font-size: 16px;
-}
-.btn:hover{ transform: translateY(-1px); }
-.btn-primary{ background: #ffa8c8; }
-
-.small{ margin: 8px 0 0; font-size: 14px; opacity: .85; }
-
-.Banana{
-  width: min(280px, 60vw);
-  height: auto;
-  margin-top: 14px;
-}
-
-.footer{ background: var(--brand); font-family: "Jersey 10", system-ui, sans-serif; color:#fff; text-align:center; padding: 12px; }
-
-@media (max-width: 520px){
-  .Favicon2{ width:52px; height:52px; }
-  .nav-link{ display:none; }
-}
