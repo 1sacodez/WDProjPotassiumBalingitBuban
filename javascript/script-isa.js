@@ -54,7 +54,7 @@ const quizData = [
   {
     question: "If Isa were to get into a band with her friends, what position would she want to take?",
     options: ["Keyboardist", "Main Vocalist", "Background Vocaist", "Drummer"],
-    answer: "Main Vocaist"
+    answer: "Main Vocalist"
   }
 ];
 

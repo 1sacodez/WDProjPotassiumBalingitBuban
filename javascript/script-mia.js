@@ -38,19 +38,19 @@ const quizData = [
   },
 
   {
-    questions: "What is Mia's favorite memory in Pisay so far this school year?",
+    question: "What is Mia's favorite memory in Pisay so far this school year?",
     options: ["Time with friends", "Debate", "Learning!", "Class Projects"],
     answer: "Time with friends"
   },
   
   {
-    questions: "What field of work would Mia like to be in in the future?",
+    question: "What field of work would Mia like to be in in the future?",
     options: ["Chemistry", "Biology", "Engineering", "English/Politics"],
     answer: "Biology"
   },
 
   {
-    questions: "What does Mia like to do to stay focused while working?",
+    question: "What does Mia like to do to stay focused while working?",
     options: ["Listening to music", "Voice calling with people", "Working in pure silence", "Sleep"],
     answer: "Listening to music"
   }
