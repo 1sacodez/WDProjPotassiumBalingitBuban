@@ -85,3 +85,19 @@ Logo:
 	- the quiz works and the score that is shown is correct
 
 hi sir :D
+
+---
+
+
+
+
+# FINAL MODIFICATION PROPOSAL
+## CS3 Q4 Project Proposal: CRUD Implementation
+
+- **C**reate: ____________
+- **R**ead:
+- **U**pdate:
+- **D**elete:
+
+![KKQuiz! Create Implementation](WDProjPotassiumBalingitBuban/assets/CRUD Create.png)
+![KKQuiz! References_Page](https://github.com/1sacodez/WDProjPotassiumBalingitBuban/blob/main/assets/KKQuiz!%20References_Page.webp)
