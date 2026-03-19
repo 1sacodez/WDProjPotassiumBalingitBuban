@@ -94,10 +94,10 @@ hi sir :D
 # FINAL MODIFICATION PROPOSAL
 ## CS3 Q4 Project Proposal: CRUD Implementation
 
-- **C**reate: When the user starts the quiz, they need to create a record by entering their email and name. 
-- **R**ead: The inputted information is read and displayed on the results screen.
-- **U**pdate: The website allows users to update their current name that they inputted for a specific email while still keeping their existing records and scores.
+- **C**reate: Before the user starts the quiz, they need to create their own "player" by inputting their email and display name. 
+- **R**ead: The inputted information is read and displayed on the results screen, along with score for their latest play, after the quiz.
+- **U**pdate: Users can update the display name that they inputted for a specific email while still keeping their existing records and scores at the results page.
 - **D**elete: Users can delete data by removing specific records or clearing all their saved scores.
 
-![KKQuiz! Create Implementation](https://github.com/1sacodez/WDProjPotassiumBalingitBuban/blob/main/assets/CRUD%20Create.webp).
-![KKQuiz! Read, Update, Delete Implementation](https://github.com/1sacodez/WDProjPotassiumBalingitBuban/blob/main/assets/CRUD%20Read%20Update%20Delete.webp).
+![KKQuiz! Create Implementation](https://github.com/1sacodez/WDProjPotassiumBalingitBuban/blob/main/assets/CRUD%20Create.webp)
+![KKQuiz! Read, Update, Delete Implementation](https://github.com/1sacodez/WDProjPotassiumBalingitBuban/blob/main/assets/CRUD%20Read%20Update%20Delete.webp)
