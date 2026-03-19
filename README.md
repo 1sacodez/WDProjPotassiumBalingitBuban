@@ -99,5 +99,6 @@ hi sir :D
 - **U**pdate:
 - **D**elete:
 
-![KKQuiz! Create Implementation](WDProjPotassiumBalingitBuban/assets/CRUD Create.png)
+![KKQuiz! Create Implementation](https://github.com/1sacodez/WDProjPotassiumBalingitBuban/blob/main/assets/CRUD%20Create.webp).
+![KKQuiz! Read, Update, Delete Implementation](https://github.com/1sacodez/WDProjPotassiumBalingitBuban/blob/main/assets/CRUD%20Read%20Update%20Delete.webp).
 ![KKQuiz! References_Page](https://github.com/1sacodez/WDProjPotassiumBalingitBuban/blob/main/assets/KKQuiz!%20References_Page.webp)
