@@ -51,8 +51,19 @@
             userBox.innerHTML = "<p><b>No player saved.</b> Go back to start.</p>";
         }
         else{
-            userBox.innerHTML = `<p><b>Name:</b> ${user.name}<br><b>Email:</b> ${user.email}</p>`;
+            userBox.innerHTML = `<p><b>Name:</b> ${user.name} <button id="editNameBtn">Edit display name</button><br><b>Email:</b> ${user.email}</p>`;
+            
+            document.getElementById("editNameBtn").addEventListener("click", () => {
+                const newName = prompt("Enter new display name:", user.name);
+                if (newName) {
+                    user.name = newName;  // __update the name in memory__
+                    localStorage.setItem("quizUser", JSON.stringify(user));  // __save updated name__
+                    alert("Display name updated!");
+                    window.location.reload();  // __refresh to show changes__
+                }
+            });
         }
+
 
         const attemptsBox = document.getElementById("attemptsBox");
         if (attempts.length === 0){
@@ -61,15 +72,33 @@
         else{
             const best = attempts.reduce((m, a) => Math.max(m, a.score), 0);
 
-            const rows = attempts.slice().reverse().map(a => {
-                const d = new Date(a.dateISO);
-                return `<tr>
-                    <td>${d.toLocaleString()}</td>
-                    <td>${a.score} / ${a.total}</td>
-                    <td>${a.secondsUsed}s</td>
-                    <td>${a.score === best ? "BEST" : ""}</td>
-                </tr>`;
-            }).join("");
+        const rows = attempts.slice().reverse().map((a, index) => {
+            const d = new Date(a.dateISO);
+            return `<tr>
+                <td>${d.toLocaleString()}</td>
+                <td>${a.score} / ${a.total}</td>
+                <td>${a.secondsUsed}s</td>
+                <td>${a.score === best ? "BEST" : ""}</td>
+                <td><button onclick="deleteAttempt(${index})">Delete</button></td>  <!-- __add delete button__ -->
+            </tr>`;
+        }).join("");
+
+        function deleteAttempt(index){
+            const allAttempts = readJSON("quizAttempts", []);
+            const user = readJSON("quizUser", null);
+            const attempts = allAttempts.filter(a => user && a.email === user.email && a.quizId === "bella_quiz");
+            
+            // __remove the chosen attempt__
+            attempts.splice(index, 1);
+            
+            // __merge back with other users' attempts__
+            const remaining = allAttempts.filter(a => !(user && a.email === user.email && a.quizId === "bella_quiz")).concat(attempts);
+            
+            localStorage.setItem("quizAttempts", JSON.stringify(remaining));  // __save updated list__
+            alert("Deleted this record!");
+            window.location.reload();  // __refresh to show changes__
+        }
+
 
             attemptsBox.innerHTML = `
                 <table border="1" cellpadding="6" cellspacing = "0">
