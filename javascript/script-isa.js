@@ -8,7 +8,7 @@ const quizData = [
   {
     question: "Is Isa a morning bird or a night owl?",
     options: ["Morning Bird", "Night Owl"] ,
-    answer: "Morning Bird"
+    answer: "Night Owl"
   },
   {
     question: "What is Isa's most used emoji?",

@@ -13,7 +13,7 @@ const quizData = [
   },
   
   {
-    question: "What is Bella's favorite day of the week",
+    question: "What is Bella's favorite day of the week?",
     options: ["Saturday", "Monday", "Wednesday", "Thursday"],
     answer: "Saturday"
   },
