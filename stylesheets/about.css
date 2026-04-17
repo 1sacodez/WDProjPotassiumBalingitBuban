@@ -1,3 +1,112 @@
+:root{
+    --bg: #f4d764;
+    --brand: #0f006d;
+    --accent: #38b6ff;
+    --pink: #ff66c4;
+    --card-border: #000;
+    --text: #111;
+    --shadow: 0 10px 25px rgba(0,0,0,.12);
+  }
+  
+  *{ box-sizing: border-box; }
+  
+  body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Trebuchet MS, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  }
+  
+  .header{
+    background: var(--brand);
+    font-family: "Jersey 10", system-ui, sans-serif;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .Favicon2{
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .title{
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(40px, 6vw, 84px);
+    line-height: 1;
+    flex: 1;
+    text-align: left;
+    letter-spacing: .5px;
+  }
+  
+  .navz{ display: flex; gap: 8px; }
+  
+  .nav-link{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 22px;
+  }
+  
+  .nav-link:hover{ background: var(--accent); }
+  .nav-link.active{ outline: 2px solid rgba(255,255,255,.45); }
+  
+  .page{
+    padding: 22px 16px 90px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1{
+    margin: 20px 0 8px;
+    color: var(--pink);
+    font-size: clamp(50px, 7vw, 100px);
+    font-family: "Jersey 10", sans-serif;
+    text-shadow: 4px 5px 0 #6b2c7a; /* purple shadow */
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  h2{
+    margin: 20px 0 8px;
+    font-size: 10px;
+    color: var(--card-border);
+    font-size: clamp(50px, 7vw, 100px);
+    font-size: 30px;
+    font-family: "Jersey 10", sans-serif;
+    text-shadow: 3px 1px 0 var(--pink);
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  
+  .subtitle{
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .parallelogram{
+    max-width: 880px;
+    margin: 20px auto;
+    padding: 24px 30px;
+    background: #f7a1b8;
+    border: 3px dashed #ffffff;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    line-height: 1.7;
+    transform: skew(-10deg);
+  }
+
 .info p{
     margin: 12px 0;
     font-size: 16px;
